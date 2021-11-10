@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-btn {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: none;
+}
+.menu {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right:0;
+    width:500px;
+    height: 100%;
+    background-color: orange;
+    transform: translateX(100%);
+    transition: all 2s ease;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul li {
+    margin-bottom: 40px;
+}
+ul li a {
+    text-decoration: none;
+    color:crimson;
+    text-transform: uppercase;
+}
+.menu-btn:checked + .menu {
+    transform: translateX(0px);
+}
